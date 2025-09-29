@@ -1,4 +1,4 @@
-Open a command prompt/terminal or use built-in terminal in Code using the **Terminal/New Terminal** menu or the **Ctrl-Shift-T** shortcut (that's a backtick).
+Open a command prompt/terminal or use built-in terminal in Code using the **Terminal/New Terminal** menu or the **Ctrl-Shift-T** .
 
 Type the following Docker commands:
 
