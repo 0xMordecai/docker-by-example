@@ -31,3 +31,9 @@ Type the following Docker commands:
 | `docker stop [containerName]`        | Stop containers                    |
 | `docker kill [containerName]`        | Kill containers                    |
 | `docker image inspect [imageName]`   | Get image info                     |
+
+# Docker CLI Cheat Sheet - Limits
+
+`docker run --memory="256m" nginx`  | Setting Max memory
+
+`docker run --cpus=".5" nginx`      | Setting Max memory
