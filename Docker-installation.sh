@@ -20,3 +20,6 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 # To verify whether Docker is installed successfully, run the following:
 sudo docker --version
+
+# You should expect a similar output to the following:
+# ----> Docker version 20.10.7, build f0df350
