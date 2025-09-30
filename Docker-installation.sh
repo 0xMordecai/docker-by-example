@@ -22,4 +22,4 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo docker --version
 
 # You should expect a similar output to the following:
-# ----> Docker version 20.10.7, build f0df350
+# ---->	Docker version 28.4.0, build d8eb465
