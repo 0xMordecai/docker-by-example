@@ -8,3 +8,8 @@ sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-\
 keyring.gpg
 
 # You then need to add the Docker repository to your apt config so that you can download packages from there:
+echo "deb [arch=amd64 signed-by=/usr/share/\
+keyrings/docker-archive-keyring.gpg] \
+https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) stable" | sudo tee /etc/apt\
+/sources.list.d/docker.list > /dev/null
