@@ -27,3 +27,14 @@ sudo docker --version
 # So, now that Docker is fully set up on your machine, let's run a hello-world container to see for ourselves:
 
 sudo docker run hello-world
+
+#	 You should see the following output:
+#	Unable to find image 'hello-world:latest' locally
+#	latest: Pulling from library/hello-world
+#	17eec7bbc9d7: Pull complete 
+#	Digest: sha256:54e66cc1dd1fcb1c3c58bd8017914dbed8701e2d8c74d9262e26bd9cc1642d31
+#	Status: Downloaded newer image for hello-world:latest
+
+#	Hello from Docker!
+#	This message shows that your installation appears to be working correctly.
+
