@@ -25,3 +25,5 @@ sudo docker --version
 # ---->	Docker version 28.4.0, build d8eb465
 
 # So, now that Docker is fully set up on your machine, let's run a hello-world container to see for ourselves:
+
+sudo docker run hello-world
