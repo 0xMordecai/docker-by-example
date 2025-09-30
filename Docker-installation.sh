@@ -6,3 +6,5 @@ gnupg-agent software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
 sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-\
 keyring.gpg
+
+# You then need to add the Docker repository to your apt config so that you can download packages from there:
