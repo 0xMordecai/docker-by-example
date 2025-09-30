@@ -15,3 +15,5 @@ $(lsb_release -cs) stable" | sudo tee /etc/apt\
 /sources.list.d/docker.list > /dev/null
 
 # Now, finally, install the Docker engine by using the following commands:
+$ sudo apt update -y
+$ sudo apt install -y docker-ce docker-ce-cli containerd.io
