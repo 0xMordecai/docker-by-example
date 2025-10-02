@@ -36,4 +36,6 @@ Type the following Docker commands:
 
 `docker run --memory="256m" nginx`    | Setting Max memory
 
-`docker run --cpus=".5" nginx`        | Setting Max memory
+`docker run --cpus=".5" nginx`        | Setting Max 
+
+# List the existing storage driver
