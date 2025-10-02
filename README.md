@@ -34,6 +34,6 @@ Type the following Docker commands:
 
 # Docker CLI Cheat Sheet - Limits
 
-`docker run --memory="256m" nginx`  | Setting Max memory
+`docker run --memory="256m" nginx`    | Setting Max memory
 
-`docker run --cpus=".5" nginx`      | Setting Max memory
+`docker run --cpus=".5" nginx`        | Setting Max memory
