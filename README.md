@@ -39,3 +39,5 @@ Type the following Docker commands:
 `docker run --cpus=".5" nginx`        | Setting Max 
 
 # List the existing storage driver
+
+`docker info|grep 'Storage Driver'`
