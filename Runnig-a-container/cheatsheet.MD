@@ -5,4 +5,6 @@ To run a Docker container, we will use the docker run command, which has the fol
 ```
 
 In its simplest form, you can use docker run by simply typing the following:
-`$ docker run hello-world`
+```shell
+    docker run hello-world
+```
