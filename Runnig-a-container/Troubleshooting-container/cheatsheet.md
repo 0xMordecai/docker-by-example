@@ -1,4 +1,3 @@
 # Troubleshooting containers
 To see what's going on within the container, you can use the `docker logs` command.
-But before using that, we need to know the container ID or container name to see the
-container's logs.
+But before using that, we need to know the container ID or container name to see the container's logs.
