@@ -27,3 +27,5 @@ and we got:
     Status: Downloaded newer image for busybox:latest
     Hello World!
 ```
+As we see, Docker pulls the latest busybox image from Docker Hub and runs the `echo
+'Hello World'` command.
