@@ -14,3 +14,10 @@ We can run nginx:1.18.0 using the following command:
 ```shell
     docker run nginx:1.18.0
 ```
+
+# Running Docker containers in the background
+To run a Docker container in the background as a daemon, you can use docker run in
+detached mode using the `-d flag`:
+```shell
+    docker run -d nginx:1.18.0
+```
