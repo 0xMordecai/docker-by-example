@@ -13,3 +13,6 @@ You can use either the container ID or the container name to interact with the c
 Practically speaking, you would be using docker logs 90% of the time unless you need to debug something with BusyBox. BusyBox is a lightweight shell container that can help you troubleshoot and debug issues with your container – mostly network issues.
 
 Let's now make BusyBox echo Hello World! for us:
+```shell
+    docker run busybox echo 'Hello World!'
+```
