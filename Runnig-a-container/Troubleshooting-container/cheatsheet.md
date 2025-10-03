@@ -6,3 +6,6 @@ To get a list of containers running within the host, run the following command:
     docker ps
 ```
 You can use either the container ID or the container name to interact with the container to list the logs. Let's use the container ID this time:
+```shell
+    docker logs [container ID]
+```
