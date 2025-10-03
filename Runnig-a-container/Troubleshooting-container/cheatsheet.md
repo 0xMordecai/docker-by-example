@@ -50,3 +50,5 @@ and we'll get:
     'index.html' saved
     / # exit
 ```
+
+When we list all the containers, we do not see the BusyBox container in there:
