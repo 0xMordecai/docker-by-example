@@ -10,6 +10,4 @@ You can use either the container ID or the container name to interact with the c
     docker logs [container ID]
 ```
 
-Practically speaking, you would be using docker logs 90% of the time unless you need
-to debug something with BusyBox. BusyBox is a lightweight shell container that can help
-you troubleshoot and debug issues with your container – mostly network issues.
+Practically speaking, you would be using docker logs 90% of the time unless you need to debug something with BusyBox. BusyBox is a lightweight shell container that can help you troubleshoot and debug issues with your container – mostly network issues.
