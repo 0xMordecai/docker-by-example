@@ -36,4 +36,17 @@ You can also use BusyBox in interactive mode by using the `-it flag`, which will
 
 ```shell
     docker run -it --rm busybox /bin/sh
+    / # echo 'Hello world!'
+```
+and we'll get:
+```shell
+    Hello world!
+    / # wget http://example.com
+    Connecting to example.com (93.184.216.34:80)
+    saving to 'index.html'
+    index.html
+    100% |***********************************
+    ****| 1256 0:00:00 ETA
+    'index.html' saved
+    / # exit
 ```
