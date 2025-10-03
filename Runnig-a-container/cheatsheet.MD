@@ -8,3 +8,9 @@ In its simplest form, you can use docker run by simply typing the following:
 ```shell
     docker run hello-world
 ```
+
+# Running containers from versioned images
+We can run nginx:1.18.0 using the following command:
+```shell
+    docker run nginx:1.18.0
+```
