@@ -29,3 +29,7 @@ and we got:
 ```
 As we see, Docker pulls the latest busybox image from Docker Hub and runs the `echo
 'Hello World'` command.
+
+You can also use BusyBox in interactive mode by using the -it flag, which will help you
+run a series of commands on the BusyBox shell. It is also a good idea to add a --rm flag to
+it to tell Docker to clean up the containers once we have exited from the shell
