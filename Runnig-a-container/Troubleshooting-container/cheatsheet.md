@@ -18,5 +18,12 @@ Let's now make BusyBox echo Hello World! for us:
 ```
 and we got:
 ```shell
-
+    Unable to find image 'busybox:latest' locally
+    latest: Pulling from library/busybox
+    9758c28807f2: Pull complete
+    Digest:
+    sha256:a9286defaba7b3a519d585ba0e37d0b2cbee74ebfe590960b0b1
+    d6a5e97d1e1d
+    Status: Downloaded newer image for busybox:latest
+    Hello World!
 ```
