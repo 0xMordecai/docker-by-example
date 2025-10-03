@@ -52,3 +52,6 @@ and we'll get:
 ```
 
 When we list all the containers, we do not see the BusyBox container in there:
+```shell
+    docker ps -a
+```
