@@ -28,8 +28,8 @@ docker run -d --name nginx --restart unless-stopped \
 -p 80:80 --memory 1000M --memory-reservation 250M nginx:1.28.0
 ```
 The following applies:
-    • -d: Run as a daemon in detached mode.
+• -d: Run as a daemon in detached mode.
 
-    • --name nginx: Give the name nginx.
+• --name nginx: Give the name nginx.
 
-    • --restart unless-stopped: Always automatically restart on failures unless explicitly stopped manually, and also start automatically on Docker daemon startup.Other options include no, on_failure, and always.
+• --restart unless-stopped: Always automatically restart on failures unless explicitly stopped manually, and also start automatically on Docker daemon startup.Other options include no, on_failure, and always.
