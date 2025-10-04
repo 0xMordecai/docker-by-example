@@ -55,3 +55,9 @@ To start your container, run the following:
 ```shell
     docker start nginx
 ```
+
+If you want to get completely rid of your container, you need to stop your container first and then remove it, using the following command:
+
+```shell
+    docker stop nginx && docker rm nginx
+```
