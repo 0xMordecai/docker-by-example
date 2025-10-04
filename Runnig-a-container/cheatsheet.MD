@@ -46,3 +46,12 @@ The following applies:
 To restart your containers, you have to stop your container first and then start it.
 
 To stop your container, run the following:
+
+```shell
+    docker stop nginx
+```
+
+To start your container, run the following:
+```shell
+    docker start nginx
+```
