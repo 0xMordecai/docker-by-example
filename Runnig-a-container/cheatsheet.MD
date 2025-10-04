@@ -23,3 +23,7 @@ detached mode using the `-d flag`:
 ```
 
 # Putting it all together
+```shell
+docker run -d --name nginx --restart unless-stopped \
+-p 80:80 --memory 1000M --memory-reservation 250M nginx:1.28.0
+```
