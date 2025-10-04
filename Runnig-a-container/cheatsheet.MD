@@ -62,6 +62,7 @@ If you want to get completely rid of your container, you need to stop your conta
     docker stop nginx && docker rm nginx
 ```
 Alternatively, you can also use the following command to do it in one go:
+
 ```shell
     docker rm -f nginx
 ```
