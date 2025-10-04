@@ -21,3 +21,5 @@ detached mode using the `-d flag`:
 ```shell
     docker run -d nginx:1.18.0
 ```
+
+# Putting it all together
