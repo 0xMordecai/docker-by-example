@@ -29,8 +29,8 @@ docker run -d --name nginx --restart unless-stopped \
 ```
 The following applies:
 
-• -d: Run as a daemon in detached mode.
+• `-d`: Run as a daemon in detached mode.
 
-• --name nginx: Give the name nginx.
+• `--name` nginx: Give the name nginx.
 
 • --restart unless-stopped: Always automatically restart on failures unless explicitly stopped manually, and also start automatically on Docker daemon startup.Other options include no, on_failure, and always.
