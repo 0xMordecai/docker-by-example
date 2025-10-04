@@ -36,3 +36,5 @@ The following applies:
 • `--restart unless-stopped`: Always automatically restart on failures unless explicitly stopped manually, and also start automatically on Docker daemon startup.Other options include `no`, `on_failure`, and `always`.
 
 • `-p 80:80`: Forward traffic `from host port 80` to `container port 80`. That allows you to expose your container to your host network.
+
+• `--memory 1000M`: Limit the container memory consumption to 1000M. If the memory exceeds this limit, the container will stop and act according to the --restart flag.
