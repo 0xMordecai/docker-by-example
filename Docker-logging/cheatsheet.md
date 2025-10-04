@@ -1,0 +1,2 @@
+# Docker logging and logging drivers
+Docker not only changed how applications are deployed but also the workflow for log management. Instead of writing logs to files, containers write logs to the console (stdout/stderr). Docker then uses a logging driver to export container logs to chosen destinations.
