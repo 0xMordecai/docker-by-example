@@ -40,3 +40,9 @@ The following applies:
 • `--memory 1000M`: Limit the container memory consumption to 1000M. If the memory exceeds this limit, the container will stop and act according to the `--restart` flag.
 
 • `--memory-reservation 250M`: Allocate a soft limit of `250M memory` to the container if the server runs out of memory.
+
+
+# Restarting and removing containers
+To restart your containers, you have to stop your container first and then start it.
+
+To stop your container, run the following:
