@@ -53,3 +53,8 @@ Then, restart the Docker service:
 ```shell
     sudo systemctl restart docker
 ```
+
+Check the status of the Docker service:
+```shell
+    sudo systemctl status docker
+```
