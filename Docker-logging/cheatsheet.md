@@ -76,3 +76,7 @@ Let's now look at the journald logs to see what we get:
         Oct 05 23:43:48 pc-name 80acf6e492af[12703]: /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform c>
         Oct 05 23:43:48 pc-name 80acf6e492af[12703]: /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
 ```
+
+And we see the logs in the journal.
+
+We can similarly configure the `Splunk` logging driver to send data to `Splunk` for analytics and `visualization`. Let's have a look now.
