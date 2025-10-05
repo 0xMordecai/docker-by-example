@@ -64,3 +64,8 @@ Now, rerun docker info to see what we get:
     docker info | grep "Logging Driver"
     Logging Driver: journald
 ```
+
+Right, as journald is now the default logging driver, let's launch a new NGINX container and visualize the logs:
+```shell
+    docker run --name nginx-journald -d nginx
+```
