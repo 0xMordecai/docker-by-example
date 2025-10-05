@@ -26,3 +26,11 @@ the following logging drivers are available:
 • `gcplogs`: Sends logs to Google Cloud Logging.
 
 And there is many more.
+
+# Configuring logging drivers
+Let's start by finding the current logging driver:
+
+```shell
+    docker info | grep "Logging Driver"
+    Logging Driver: json-file
+```
