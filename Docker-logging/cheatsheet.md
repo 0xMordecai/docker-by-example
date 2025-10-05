@@ -45,5 +45,7 @@ Edit the `/etc/docker/daemon.json` file using an editor of your choice. If you u
 
 Add the `log-driver` entry to the daemon.json configuration file:
 ```json
-    "log-driver": "journald"
+    {
+        "log-driver": "journald"
+    }
 ```
