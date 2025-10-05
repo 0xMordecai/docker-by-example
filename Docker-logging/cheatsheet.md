@@ -8,4 +8,4 @@ So,we should use log drivers to export the logs into a particular place and stor
 
 # most commonly used Docker logging drivers, their purposes, and when to use each
 
-1. json-file (Default)
+1. `json-file` (Default)
