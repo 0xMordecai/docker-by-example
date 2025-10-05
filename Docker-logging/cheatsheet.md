@@ -15,6 +15,8 @@ the following logging drivers are available:
 
 • `json-file`: The log files are stored in a JSON format, and this is the default Docker logging driver.
 
+• `journald`: Uses journald to store Docker logs. You can use the journald command line to browse the container logs and the Docker daemon logs.
+
 • `syslog`: Uses syslog for storing the Docker logs as well. This option makes sense when you use syslog as your default logging mechanism.
 
 • `awslogs`: Sends logs to AWS CloudWatch.
