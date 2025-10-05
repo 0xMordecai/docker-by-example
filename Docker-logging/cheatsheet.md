@@ -15,3 +15,5 @@ the following logging drivers are available:
 
 • `json-file`: The log files are stored in a JSON format, and this is the default Docker logging driver.
 
+• `syslog`: Uses syslog for storing the Docker logs as well. This option makes sense when you use syslog as your default logging mechanism.
+
