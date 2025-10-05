@@ -17,6 +17,8 @@ the following logging drivers are available:
 
 • `journald`: Uses `journald` to store Docker logs. You can use the journald command line to browse the container logs and the Docker daemon logs.
 
+• `splunk`: Sends logs to `Splunk` using the HTTP Event Collector.
+
 • `syslog`: Uses syslog for storing the Docker logs as well. This option makes sense when you use syslog as your default logging mechanism.
 
 • `awslogs`: Sends logs to AWS CloudWatch.
