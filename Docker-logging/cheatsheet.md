@@ -34,3 +34,5 @@ Let's start by finding the current logging driver:
     docker info | grep "Logging Driver"
     Logging Driver: json-file
 ```
+
+so currently, the default logging driver is set to json-file. If we want to use journald or Splunk as the default logging driver, we must configure the default logging driver in the daemon.json file.
