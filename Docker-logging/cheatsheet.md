@@ -49,3 +49,7 @@ Add the `log-driver` entry to the daemon.json configuration file:
         "log-driver": "journald"
     }
 ```
+Then, restart the Docker service:
+```shell
+    sudo systemctl restart docker
+```
