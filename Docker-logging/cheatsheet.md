@@ -19,3 +19,4 @@ the following logging drivers are available:
 
 • `awslogs`: Sends logs to AWS CloudWatch.
 
+• `gcplogs`: Sends logs to Google Cloud Logging.
