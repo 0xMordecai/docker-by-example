@@ -17,3 +17,5 @@ the following logging drivers are available:
 
 • `syslog`: Uses syslog for storing the Docker logs as well. This option makes sense when you use syslog as your default logging mechanism.
 
+• `awslogs`: Sends logs to AWS CloudWatch.
+
