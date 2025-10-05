@@ -72,5 +72,7 @@ Right, as journald is now the default logging driver, let's launch a new NGINX c
 
 Let's now look at the journald logs to see what we get:
 ```shell
-
+    sudo journalctl CONTAINER_NAME=nginx-journald
+        Oct 05 23:43:48 pc-name 80acf6e492af[12703]: /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform c>
+        Oct 05 23:43:48 pc-name 80acf6e492af[12703]: /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
 ```
