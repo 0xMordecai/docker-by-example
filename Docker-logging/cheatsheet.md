@@ -58,3 +58,9 @@ Check the status of the Docker service:
 ```shell
     sudo systemctl status docker
 ```
+
+Now, rerun docker info to see what we get:
+```shell
+    docker info | grep "Logging Driver"
+    Logging Driver: journald
+```
