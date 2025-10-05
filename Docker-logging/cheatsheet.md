@@ -8,4 +8,7 @@ So,we should use log drivers to export the logs into a particular place and stor
 
 # Logging drivers
 the following logging drivers are available:
+
     • `none`: There are no logs available for the container, and therefore they are not stored anywhere.
+
+    • `json-file`: The log files are stored in a JSON format, and this is the default Docker logging driver.
