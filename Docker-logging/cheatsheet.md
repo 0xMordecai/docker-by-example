@@ -11,4 +11,7 @@ the following logging drivers are available:
 
 • `none`: There are no logs available for the container, and therefore they are not stored anywhere.
 
+• local: Logs are stored locally in a custom format and therefore minimizes overhead.
+
 • `json-file`: The log files are stored in a JSON format, and this is the default Docker logging driver.
+
