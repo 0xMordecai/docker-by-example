@@ -7,3 +7,5 @@ Log management is an essential function within Docker, like any application. But
 So,we should use log drivers to export the logs into a particular place and store and persist it.
 
 # Logging drivers
+the following logging drivers are available:
+    • `none`: There are no logs available for the container, and therefore they are not stored anywhere.
