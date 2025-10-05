@@ -69,3 +69,8 @@ Right, as journald is now the default logging driver, let's launch a new NGINX c
 ```shell
     docker run --name nginx-journald -d nginx
 ```
+
+Let's now look at the journald logs to see what we get:
+```shell
+
+```
