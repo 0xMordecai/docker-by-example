@@ -79,4 +79,4 @@ Let's now look at the journald logs to see what we get:
 
 And we see the logs in the journal.
 
-We can similarly configure the `Splunk` logging driver to send data to `Splunk` for analytics and `visualization`. Let's have a look now.
+We can similarly configure the `Splunk` logging driver to send data to `Splunk` for analytics and `visualization`.
