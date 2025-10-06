@@ -106,4 +106,4 @@ Right, so to visualize JSON logs, we need to look into the JSON log directory, t
 We see that the logs are now streaming to the JSON file instead of Splunk. That is how we override the default log driver.
 
 # Tip
-In most cases, it is best to stick with one default logging driver so that you have one place to analyze and visualize your logs.
+In most cases, it is best to `stick with one default logging driver` so that you have one place to analyze and visualize your logs.
