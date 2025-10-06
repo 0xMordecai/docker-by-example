@@ -103,3 +103,4 @@ Right, so to visualize JSON logs, we need to look into the JSON log directory, t
     for start up\n","stream":"stdout","time":"2020-11-24T06:27:
     05.937629749Z"}
 ```
+We see that the logs are now streaming to the JSON file instead of Splunk. That is how we override the default log driver.
