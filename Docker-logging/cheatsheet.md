@@ -82,3 +82,5 @@ And we see the logs in the journal.
 # using flags to determine different logging driversfor different container
 
 You can also have different logging drivers for different containers, and you can do so by overriding the defaults by passing the `log-driver` and `log-opts` flags from the command line.
+
+As our current configuration is `journald`, and we want to export data to a `JSON` file, we can specify `log-driver` as `json-file` while running the container. Let's have a look:
