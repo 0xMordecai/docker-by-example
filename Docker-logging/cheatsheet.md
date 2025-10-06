@@ -89,6 +89,7 @@ As our current configuration is `journald`, and we want to export data to a `JSO
     -d nginx
 ```
 
+Right, so to visualize JSON logs, we need to look into the JSON log directory, that is, `/var/lib/docker/containers/<container_id>/<container_id>-json.log`.
 ```shell
     cat /var/lib/docker/containers/379eb8d0162d98614d53ae1\
     c81ea1ad154745f9edbd2f64cffc2279772198bb2379eb8d0162d9\
