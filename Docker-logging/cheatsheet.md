@@ -79,3 +79,5 @@ Let's now look at the journald logs to see what we get:
 
 And we see the logs in the journal.
 
+# using flags to determine different logging driversfor different container
+
