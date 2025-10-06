@@ -1,0 +1,1 @@
+# Typical challenges and best practices with Docker logging
