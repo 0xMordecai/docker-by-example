@@ -94,4 +94,12 @@ Right, so to visualize JSON logs, we need to look into the JSON log directory, t
     cat /var/lib/docker/containers/379eb8d0162d98614d53ae1\
     c81ea1ad154745f9edbd2f64cffc2279772198bb2379eb8d0162d9\
     8614d53ae1c81ea1ad154745f9edbd2f64cffc2279772198bb2-json.log
+
+    {"log":"/docker-entrypoint.sh: /docker-entrypoint.d/ is not
+    empty, will attempt to perform configuration\n","stream":"
+    stdout","time":"2020-11-24T06:27:05.922950436Z"}
+    ...
+    {"log":"/docker-entrypoint.sh: Configuration complete; ready
+    for start up\n","stream":"stdout","time":"2020-11-24T06:27:
+    05.937629749Z"}
 ```
