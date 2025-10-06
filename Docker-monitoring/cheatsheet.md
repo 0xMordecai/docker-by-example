@@ -4,4 +4,4 @@ We've looked at the logging aspects of containers, but one of the essential elem
 
 Monitoring Docker nodes and containers are an essential part of managing Docker. There are various tools available for monitoring Docker. While you can use traditional tools such as `Nagios`, `Prometheus` is gaining ground in cloud-native monitoring because of its simplicity and pluggable architecture.
 
-Prometheus is a free, open source monitoring tool that provides a dimensional data model, efficient and straightforward querying using the Prometheus query language    (PromQL), efficient time-series databases, and modern alerting capabilities.
+`Prometheus` is a free, open source monitoring tool that provides a `dimensional data model`, efficient and straightforward querying using the `Prometheus query language   (PromQL)`, efficient time-series databases, and modern alerting capabilities.
