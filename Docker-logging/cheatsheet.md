@@ -88,3 +88,9 @@ As our current configuration is `journald`, and we want to export data to a `JSO
     docker run --name nginx-json-file --log-driver json-file \ 
     -d nginx
 ```
+
+```shell
+    cat /var/lib/docker/containers/379eb8d0162d98614d53ae1\
+    c81ea1ad154745f9edbd2f64cffc2279772198bb2379eb8d0162d9\
+    8614d53ae1c81ea1ad154745f9edbd2f64cffc2279772198bb2-json.log
+```
