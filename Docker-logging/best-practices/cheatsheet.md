@@ -11,3 +11,5 @@ Well, the best way to approach this problem is to use JSON files to store the lo
 temporarily in your virtual machine and use another container to push the logs to
 your chosen log analytics solution using the old-fashioned way. That way, you decouple
 dependency on an external service to run your application.
+
+You can use the logging driver that exports log directly to your log analytics solution within the log forwarder container. There are many logging drivers available that support many log targets. Always mark the logs in such a way that the containers appear as an entity on their own. That will disassociate containers with virtual machines, and you can then make the best use of a distributed container-based architecture.
