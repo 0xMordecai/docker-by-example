@@ -81,3 +81,4 @@ And we see the logs in the journal.
 
 # using flags to determine different logging driversfor different container
 
+You can also have different logging drivers for different containers, and you can do so by overriding the defaults by passing the log-driver and log-opts flags from the command line.
