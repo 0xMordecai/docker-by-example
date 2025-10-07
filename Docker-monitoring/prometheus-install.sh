@@ -16,3 +16,7 @@ prometheus --version
 sudo useradd --no-create-home --shell /bin/false prometheus
 sudo mkdir /etc/prometheus /var/lib/prometheus
 sudo chown prometheus:prometheus /etc/prometheus /var/lib/prometheus
+
+# Move config files
+sudo mv consoles/ console_libraries/ prometheus.yml /etc/prometheus/
+sudo chown -R prometheus:prometheus /etc/prometheus
