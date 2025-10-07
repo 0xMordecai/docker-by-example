@@ -18,3 +18,5 @@ sudo mv node_exporter /usr/local/bin/
 # Verify installation:
 node_exporter --version
 
+# Set correct permissions
+sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
