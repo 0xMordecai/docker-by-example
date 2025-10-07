@@ -8,4 +8,4 @@ Monitoring Docker nodes and containers are an essential part of managing Docker.
 
 # Challenges with container monitoring
 
-From a conceptual point of view, there is no difference between container monitoring and the traditional method. You would still need metrics, logs, health checks, and service discovery
+From a conceptual point of view, there is no difference between container monitoring and the traditional method. You would still need `metrics`, `logs`, `health checks`, and `service discovery`.The problem with containers is the abstraction that they bring with them; let's look at some of the problems:
