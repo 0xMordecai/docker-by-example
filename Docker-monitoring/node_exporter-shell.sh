@@ -11,3 +11,7 @@ curl -LO https://github.com/prometheus/node_exporter/releases/latest/download/no
 # Unpack it:
 tar xvf node_exporter-1.9.1-linux-amd64.tar.gz
 cd node_exporter-1.9.1-linux-amd64
+
+# Move the binary to your system path
+sudo mv node_exporter /usr/local/bin/
+
