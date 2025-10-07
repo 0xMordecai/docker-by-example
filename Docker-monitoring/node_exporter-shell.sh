@@ -6,8 +6,7 @@ sudo useradd --no-create-home --shell /bin/false node_exporter
 cd /tmp
 
 # Then download the latest version:
-curl -LO https://github.com/prometheus/node_exporter/releases/latest/download/node_exporter-1.9.1-linux-amd64.tar.gz
-
+wget https://github.com/prometheus/node_exporter/releases/download/v1.9.1/node_exporter-1.9.1.darwin-amd64.tar.gz
 # Unpack it:
 tar xvf node_exporter-1.9.1-linux-amd64.tar.gz
 cd node_exporter-1.9.1-linux-amd64
