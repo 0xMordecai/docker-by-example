@@ -15,3 +15,6 @@ cd node_exporter-1.9.1-linux-amd64
 # Move the binary to your system path
 sudo mv node_exporter /usr/local/bin/
 
+# Verify installation:
+node_exporter --version
+
