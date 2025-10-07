@@ -20,3 +20,25 @@ sudo chown prometheus:prometheus /etc/prometheus /var/lib/prometheus
 # Move config files
 sudo mv consoles/ console_libraries/ prometheus.yml /etc/prometheus/
 sudo chown -R prometheus:prometheus /etc/prometheus
+
+# Create a systemd service file
+sudo tee /etc/systemd/system/prometheus.service > /dev/null <<EOF
+[Unit]
+Description=Prometheus Monitoring
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=prometheus
+Group=prometheus
+Type=simple
+ExecStart=/usr/local/bin/prometheus \
+    --config.file=/etc/prometheus/prometheus.yml \
+    --storage.tsdb.path=/var/lib/prometheus/ \
+    --web.console.templates=/etc/prometheus/consoles \
+    --web.console.libraries=/etc/prometheus/console_libraries
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
