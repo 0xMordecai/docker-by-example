@@ -13,3 +13,5 @@ From a conceptual point of view, there is no difference between container monito
 • Containers behave like a `mini virtual machine`, but they are a `process running on aserver` in reality. However, they still have everything to monitor that we would do in a virtual machine. A container process will have many metrics very similar to virtual machines to be treated as separate entities altogether. `Most people make this mistake when dealing with containers when they map containers to a particular virtual machine`.
 
 • `Containers running on clusters can move from one node(server) to another`. That adds another layer of complexity as your monitoring tool needs to know where your containers are to scrape metrics from it. Well, it should not matter with the more modern, container-optimized tools.
+
+Prometheus helps us address these challenges as it is built from a distributed application's point of view.
