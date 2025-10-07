@@ -36,6 +36,15 @@ ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=multi-user.target
 EOF
+
 # Reload systemd and start the service
 sudo systemctl daemon-reload
 sudo systemctl enable --now node_exporter
+
+# Check that it’s running:
+sudo systemctl status node_exporter
+
+# Verify it works 
+# In your browser (or via curl), open:
+curl http://localhost:9100/metrics
+
