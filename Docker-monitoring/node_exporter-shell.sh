@@ -36,4 +36,6 @@ ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=multi-user.target
 EOF
-
+# Reload systemd and start the service
+sudo systemctl daemon-reload
+sudo systemctl enable --now node_exporter
