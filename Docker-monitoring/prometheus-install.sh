@@ -15,6 +15,7 @@ prometheus --version
 # Create directories and user
 sudo useradd --no-create-home --shell /bin/false prometheus
 sudo mkdir /etc/prometheus /var/lib/prometheus
+# update the permissions so that two folders are own by prometheus user that we created
 sudo chown prometheus:prometheus /etc/prometheus /var/lib/prometheus
 
 # Move config files
