@@ -19,7 +19,7 @@ sudo mkdir /etc/prometheus /var/lib/prometheus
 sudo chown prometheus:prometheus /etc/prometheus /var/lib/prometheus
 
 # Move config files
-sudo mv consoles/ console_libraries/ prometheus.yml /etc/prometheus/
+sudo mv prometheus.yml /etc/prometheus/
 sudo chown -R prometheus:prometheus /etc/prometheus
 
 # Create a systemd service file
