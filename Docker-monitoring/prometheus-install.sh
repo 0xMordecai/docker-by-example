@@ -35,8 +35,7 @@ Group=prometheus
 Type=simple
 ExecStart=/usr/local/bin/prometheus \
     --config.file=/etc/prometheus/prometheus.yml \
-    --storage.tsdb.path=/var/lib/prometheus/ \
-    --web.console.templates=/etc/prometheus/conso
+    --storage.tsdb.path=/var/lib/prometheus/ 
 
 [Install]
 WantedBy=multi-user.target
