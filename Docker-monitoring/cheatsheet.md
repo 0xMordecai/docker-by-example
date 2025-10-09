@@ -19,4 +19,4 @@ From a conceptual point of view, there is no difference between container monito
 # Resources:
 Look at Prometheus Docs : `https://prometheus.io/docs/prometheus/3.5/getting_started/` 
 # Metrics to monitor
-Monitoring metrics is a complex subject, and it would depend mostly on your use case. However, the following are some guidelines on what kind of metrics you might want to monitor.
+Monitoring metrics is a complex subject, and it would `depend mostly on your use case`. However, the following are some guidelines on what kind of metrics you might want to monitor.
