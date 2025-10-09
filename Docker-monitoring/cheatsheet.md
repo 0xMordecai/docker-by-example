@@ -17,4 +17,4 @@ From a conceptual point of view, there is no difference between container monito
 `Prometheus` helps us address these challenges as it is built from a distributed application's point of view.
 
 # Resources:
-Look at Prometheus Docs : 
+Look at Prometheus Docs : `https://prometheus.io/docs/prometheus/3.5/getting_started/` 
