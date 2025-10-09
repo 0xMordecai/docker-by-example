@@ -43,3 +43,7 @@ Docker container metrics are the next thing and you should look at the following
 • `Container memory usage`: This metric will provide the amount of memory used by the Docker container, and you can set memory limits according to the usage.
 
 • `Container swap`: This metric will tell what containers were using the swap instead of the RAM. It will help us identify memory-hungry containers.
+
+• `Container disk I/O`: This is an important metric and will help us understand containers' disk profiles. Spikes can indicate a disk bottleneck, or you might want to revisit your storage driver configuration.
+
+• `Container network metrics`: This metric will tell us how much network bandwidth the containers are using and help us understand traffic patterns. You can use these to detect an unexpected network spike or a denial of service attack.
