@@ -29,3 +29,7 @@ You need to monitor your host metrics as your containers would run on them. Some
 • `Host memory`: Like the host CPU, you need to watch the host memory to detect issues such as memory leaks and runaway memory.
 
 • `Host disk space`: As Docker containers use the host filesystem to store the transient and persistent file, you need to monitor it.
+
+# Docker container metrics
+
+Docker container metrics are the next thing and you should look at the following:
