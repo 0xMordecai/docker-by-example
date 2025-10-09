@@ -14,4 +14,7 @@ From a conceptual point of view, there is no difference between container monito
 
 • `Containers running on clusters can move from one node(server) to another`. That adds another layer of complexity as your monitoring tool needs to know where your containers are to scrape metrics from it. Well, it should not matter with the more modern, container-optimized tools.
 
-Prometheus helps us address these challenges as it is built from a distributed application's point of view.
+`Prometheus` helps us address these challenges as it is built from a distributed application's point of view.
+
+# Resources:
+Look at Prometheus Docs : 
