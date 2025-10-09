@@ -41,4 +41,5 @@ Docker container metrics are the next thing and you should look at the following
 • `Container memory fail counters`: This metric will provide the number of times the container requested more than the allocated memory. It will help you understand what containers required more than the allocated memory, and you can plan to run the container accordingly.
 
 • `Container memory usage`: This metric will provide the amount of memory used by the Docker container, and you can set memory limits according to the usage.
+
 • `Container swap`: This metric will tell what containers were using the swap instead of the RAM. It will help us identify memory-hungry containers.
