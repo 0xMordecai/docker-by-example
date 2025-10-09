@@ -35,7 +35,10 @@ You need to monitor your host metrics as your containers would run on them. Some
 Docker container metrics are the next thing and you should look at the following:
 
 • `Container CPU`: This metric will provide the amount of CPU used by the Docker container. You should monitor it to understand the usability pattern and decide where to place your container effectively.
+
 • `Throttled CPU time`: This metric allows us to understand the total time when the CPU was throttled for a container. That enables us to know whether a particular container needs more CPU time than others, and you can adjust the CPU share constraint accordingly.
+
 • `Container memory fail counters`: This metric will provide the number of times the container requested more than the allocated memory. It will help you understand what containers required more than the allocated memory, and you can plan to run the container accordingly.
+
 • `Container memory usage`: This metric will provide the amount of memory used by the Docker container, and you can set memory limits according to the usage.
 • `Container swap`: This metric will tell what containers were using the swap instead of the RAM. It will help us identify memory-hungry containers.
