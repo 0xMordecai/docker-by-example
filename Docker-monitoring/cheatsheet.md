@@ -23,3 +23,5 @@ Monitoring metrics is a complex subject, and it would `depend mostly on your use
 
 # Host metrics
 You need to monitor your host metrics as your containers would run on them. Some of the metrics that you can watch are the following:
+
+• `Host CPU`: It's good to know whether your host has sufficient CPU to run your containers. If not, it might terminate some of your containers to account for that. So, to ensure reliability, you need to keep this in check.
