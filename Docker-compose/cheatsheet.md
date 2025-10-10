@@ -39,3 +39,9 @@ The next step in the process is to create a `docker-compose` file. A `docker-com
     volumes:
       redis-data:
 ```
+
+The YAML file describes two services – flask and redis.
+
+The flask service uses the python-flask-redis:latest image – the image we built with the preceding code. It also maps host port 80 to container port 5000, exposing this application to your host machine on port 80, and you can access it via http://localhost.
+
+The redis service uses the official redis:alpine image and does not expose any port, as we don’t want this service outside the container network’s confines. However, it declares a persistent volume,
