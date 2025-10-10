@@ -13,3 +13,6 @@ We have a Python Flask application that listens on port `5000`, which we will ev
 The following diagram depicts the application architecture:
 
 ![alt text](image.png)
+
+# Creating the docker-compose file
+The next step in the process is to create a docker-compose file. A docker-compose file is a YAML file that contains a list of services, networks, volumes, and other associated configurations. Let’s look at the following example docker-compose.yaml file to understand it better:
