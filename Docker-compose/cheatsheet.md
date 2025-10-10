@@ -44,6 +44,6 @@ The `YAML` file describes two services – `flask` and `redis`.
 
 The flask service uses the `python-flask-redis:latest` image – the image we built with the preceding code. It also maps `host port 80` to `container port 5000`, exposing this application to your host machine on port 80, and you can access it via `http://localhost`.
 
-The `redis` service uses the official `redis:alpine` image and does `not expose any port`, as we don’t want this service outside the container network’s confines. However, it declares a persistent volume, redis-data, that comprises the /data directory. We can mount this volume on the host filesystem for persistence beyond the container life cycle.
+The `redis` service uses the official `redis:alpine` image and does `not expose any port`, as we don’t want this service outside the container network’s confines. However, it declares a persistent volume, `redis-data`, that comprises the `/data` directory. We can mount this volume on the host filesystem for persistence beyond the container life cycle.
 
 There is also a flask-app-net network that uses the bridge driver, and both services share the same network. This means the services can call each other by using their service names. If you look at the app.py code, you will see that we established a Redis service connection using the redis hostname.
