@@ -49,3 +49,7 @@ The `redis` service uses the official `redis:alpine` image and does `not expose 
 There is also a `flask-app-net network` that uses the `bridge driver`, and both services share the same network. This means the services can call each other by using their service names. If you look at the `app.py` code, you will see that we established a Redis service connection using the `redis` hostname.
 
 To apply the configuration, simply run `docker-compose up -d`:
+
+```shell
+    docker compose up -d
+```
