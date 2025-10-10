@@ -16,3 +16,26 @@ The following diagram depicts the application architecture:
 
 # Creating the docker-compose file
 The next step in the process is to create a `docker-compose` file. A `docker-compose file is a YAML file that contains a list of services, networks, volumes, and other associated configurations`. Let’s look at the following example docker-compose.yaml file to understand it better:
+
+```yaml
+    version: "2.4"
+    services:
+      flask:
+        image: "bharamicrosystems/python-flask-redis:latest"
+        ports:
+          - "80:5000"
+        networks:
+          - flask-app-net
+      redis:
+        image: "redis:alpine"
+        networks:
+          - flask-app-net
+        command: ["redis-server", "--appendonly", "yes"]
+        volumes:
+          - redis-data:/data
+    networks:
+      flask-app-net:
+        driver: bridge
+    volumes:
+      redis-data:
+```
