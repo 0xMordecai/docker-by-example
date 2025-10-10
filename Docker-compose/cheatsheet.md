@@ -8,5 +8,9 @@ After that, you can simply run `docker compose up` to run your entire containeri
 
 # Deploying a sample application with Docker Compose
 
+We have a Python Flask application that listens on port 5000, which we will eventually map to host
+port 80. The application will connect to the Redis database as a backend service on its default port,
+6379, and fetch the page’s last visit time. We will not expose that port to the host system. This means
+the database is entirely out of bounds for any external party with access to the application.
 
 ![alt text](image.png)
