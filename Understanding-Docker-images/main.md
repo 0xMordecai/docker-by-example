@@ -10,3 +10,6 @@ Docker images use a layered filesystem. Instead of a huge monolithic block on th
 
 # The layered filesystem
 
+When you build a Docker image using a **Dockerfile**, Docker doesn’t create one big image at once — instead, it builds it **step by step**, and each step becomes a **layer**.
+
+You can think of it like a **stack of transparent sheets**: each Dockerfile instruction adds one more sheet (layer) on top of the previous ones. The final image is the combination of all those layers.
