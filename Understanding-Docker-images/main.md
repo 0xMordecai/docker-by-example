@@ -13,3 +13,5 @@ Docker images use a layered filesystem. Instead of a huge monolithic block on th
 When you build a Docker image using a **Dockerfile**, Docker doesn’t create one big image at once — instead, it builds it **step by step**, and each step becomes a **layer**. The current layer contains just the differences between the previous and current filesystem. A container image comprises several layers.
 
 Containers contain an additional writable filesystem on top of the image layers. This is the layer where your containers modify the filesystem to provide the expected functionality.
+
+There are several advantages of using layers instead of merely copying the entire filesystem of the container. `Since image layers are read-only, multiple containers created from an image share the same layered filesystem, decreasing the overall disk and network footprint`. **Layers also allow you to share filesystems between images**. For example, if two images come from a single base image, both images share the same base layer.
