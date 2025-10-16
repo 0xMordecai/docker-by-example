@@ -15,3 +15,5 @@ When you build a Docker image using a **Dockerfile**, Docker doesn’t create on
 Containers contain an additional writable filesystem on top of the image layers. This is the layer where your containers modify the filesystem to provide the expected functionality.
 
 There are several advantages of using layers instead of merely copying the entire filesystem of the container. `Since image layers are read-only, multiple containers created from an image share the same layered filesystem, decreasing the overall disk and network footprint`. **Layers also allow you to share filesystems between images**. For example, if two images come from a single base image, both images share the same base layer.
+
+**The writable filesystem is unique for every container you spin from container images, even if you create containers from the same image**.
