@@ -63,3 +63,4 @@ If we run `curl localhost`, we get the default nginx html response:
     </body>
     </html>
 ```
+That’s great! We have built our first image using a Dockerfile.
