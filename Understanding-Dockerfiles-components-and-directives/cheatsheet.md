@@ -66,3 +66,8 @@ If we run `curl localhost`, we get the default nginx html response:
 That’s great! We have built our first image using a Dockerfile.
 
 What if we wanted to customize the image according to our requirements? Practically speaking, no one would want an NGINX container just responding with the default Welcome to nginx! message, so let’s create an index page and use that instead:
+
+```shell
+    $ vim index.html
+    Hello World! This is my first docker image!
+```
