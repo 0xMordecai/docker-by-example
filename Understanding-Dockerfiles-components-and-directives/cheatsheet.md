@@ -48,3 +48,5 @@ Now, let’s create a container out of the image using the following command:
                   _user>/nginx-    'daemon of…"  ago         seconds  tcp, :::80->80/tcp  noether
                   hello-world                                                                    
 ```
+
+Here, we can see that the container is up and running.
