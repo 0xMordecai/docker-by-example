@@ -161,3 +161,7 @@ The **HEALTHCHECK** directive also contains the following optional fields:
 the first health check. This allows you to ensure your container is up before a health check.
 
 • `--retries (default: 3)`: The number of times the probe will retry before declaring an unhealthy status.
+
+# Tip
+
+**While using HEALTHCHECK is a great option, you should avoid using it to run your containers on Kubernetes or a similar container orchestrator. You should make use of liveness and readiness probes instead. Similarly, you can define health checks on Docker Compose if you are using it, so use that instead of baking the health check into the container image.**
