@@ -71,3 +71,4 @@ What if we wanted to customize the image according to our requirements? Practica
     $ vim index.html
     Hello World! This is my first docker image!
 ```
+This one outputs a custom message instead of the default **NGINX HTML** page.
