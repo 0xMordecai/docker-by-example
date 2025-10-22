@@ -36,3 +36,15 @@ Here, we have the following:
 • `container-image-name`: The container image’s name
 
 • `version`: The image version
+
+Now, let’s create a container out of the image using the following command:
+
+```shell
+    $ docker run -d -p 80:80 <your_dockerhub_user>/nginx-hello-world
+    092374c4501560e96a13444ce47cb978b961cf8701af311884bfe…
+    $ docker ps
+    CONTAINER ID  IMAGE            COMMAND       CREATED     STATUS   PORTS               NAMES
+    092374c45015  <your_dockerhub  "nginx -g     28 seconds  Up 27   0.0.0.0:80->80/     loving_
+                  _user>/nginx-    'daemon of…"  ago         seconds  tcp, :::80->80/tcp  noether
+                  hello-world                                                                    
+```
