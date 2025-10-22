@@ -113,3 +113,5 @@ When we build this file, we expect the **index.html** file to be copied to the *
     => => writing image sha256:cb2e67bd… 0.0s
     => => naming to docker.io/<your_dockerhub_user>/nginx-hello-world
 ```
+
+This time, the build was much faster! When we executed the Docker build, it used a lot of layers from the cache. That is one of the advantages of layered architecture; you only build the changing part and use the existing one the way it is.
