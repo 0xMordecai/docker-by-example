@@ -50,3 +50,16 @@ Now, let’s create a container out of the image using the following command:
 ```
 
 Here, we can see that the container is up and running.
+
+If we run `curl localhost`, we get the default nginx html response:
+
+```shell
+    $ curl localhost
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Welcome to nginx!</title>
+    ...
+    </body>
+    </html>
+```
