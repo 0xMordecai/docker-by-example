@@ -87,6 +87,6 @@ So, modify the Dockerfile so that it includes the following:
 
 Here, we’ve added two directives to the file: WORKDIR and ADD. Let’s understand what each one does:
 
-• WORKDIR: This defines the current working directory, which is /var/www/html in this case. The last WORKDIR in the Dockerfile also specifies the working directory when the container is executed. So, if you exec into a running container, you will land in the last defined WORKDIR. WORKDIR can be absolute as well as relative to the current working directory.
+• `WORKDIR`: This defines the current working directory, which is **/var/www/html** in this case. The last **WORKDIR** in the Dockerfile also specifies the working directory when the container is executed. So, if you **exec** into a running container, you will land in the last defined **WORKDIR**. **WORKDIR** can be absolute as well as relative to the current working directory.
 
-• ADD: This adds a local file to the container filesystem – the working directory, in this case. You can also use a COPY directive here instead of ADD, though ADD offers some more features, such as downloading files from a URL and using an archive such as a TAR or ZIP package.
+• `ADD`: This adds a local file to the container filesystem – the working directory, in this case. You can also use a COPY directive here instead of ADD, though ADD offers some more features, such as downloading files from a URL and using an archive such as a TAR or ZIP package.
