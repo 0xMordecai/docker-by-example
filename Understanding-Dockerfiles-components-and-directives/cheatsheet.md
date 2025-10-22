@@ -90,3 +90,26 @@ Here, we’ve added two directives to the file: WORKDIR and ADD. Let’s underst
 • `WORKDIR`: This defines the current working directory, which is **/var/www/html** in this case. The last **WORKDIR** in the Dockerfile also specifies the working directory when the container is executed. So, if you **exec** into a running container, you will land in the last defined **WORKDIR**. **WORKDIR** can be absolute as well as relative to the current working directory.
 
 • `ADD`: This adds a local file to the container filesystem – the working directory, in this case. You can also use a **COPY** directive here instead of **ADD**, though **ADD** offers some more features, such as downloading files from a URL and using an archive such as a **TAR** or **ZIP** package.
+
+When we build this file, we expect the **index.html** file to be copied to the **/var/www/html** directory within the container filesystem. Let’s have a look:
+
+```shell
+    docker build -t <your_dockerhub_user>/nginx-hello-world .
+    [+] Building 1.6s (10/10) FINISHED
+    => [internal] load build definition from Dockerfile 0.0s
+    => => transferring dockerfile: 211B 0.0s
+    => [internal] load .dockerignore 0.0s
+    => => transferring context: 2B 0.0s
+    => [internal] load metadata for docker.io/library/ubuntu:bionic 1.4s
+    => [1/5] FROM docker.io/library/ubuntu:bionic@sha256:152dc042… 0.0s
+    => [internal] load build context 0.0s
+    => => transferring context: 81B 0.0s
+    => CACHED [2/5] RUN apt update && apt install -y curl 0.0s
+    => CACHED [3/5] RUN apt update && apt install -y nginx 0s
+    => [4/5] WORKDIR /var/www/html/ 0.0s
+    => [5/5] ADD index.html ./ 0.0s
+    => exporting to image 0.0s
+    => => exporting layers 0.0s
+    => => writing image sha256:cb2e67bd… 0.0s
+    => => naming to docker.io/<your_dockerhub_user>/nginx-hello-world
+```
