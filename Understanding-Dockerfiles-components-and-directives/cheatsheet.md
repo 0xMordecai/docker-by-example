@@ -25,6 +25,4 @@ let's first build the dockerfile :
         => => writing image sha256:9d34cdda… 0.0s
         => => naming to docker.io/<your_dockerhub_user>/nginx-hello-world
 ```
-You might have noticed that the name of the container had a prefix in front of it. That is your Docker
-Hub account name. The name of the image has a structure of <registry-url>/<account-
-name>/<container-image-name>:<version>.
+You might have noticed that the name of the container had a prefix in front of it. That is your Docker Hub account name. The name of the image has a structure of <registry-url>/<account-name>/<container-image-name>:<version>.
