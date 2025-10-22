@@ -77,7 +77,7 @@ We all know that the default **NGINX** directory containing the **index.html** f
 
 So, modify the Dockerfile so that it includes the following:
 ```shell
-    FROM ubuntu:bionic
+    FROM ubuntu:25.04
     RUN apt update && apt install -y curl
     RUN apt update && apt install -y nginx
     WORKDIR /var/www/html/
