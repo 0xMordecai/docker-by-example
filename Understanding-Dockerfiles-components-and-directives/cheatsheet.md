@@ -29,6 +29,9 @@ You might have noticed that the name of the container had a prefix in front of i
 
 Here, we have the following:
 • `registry-url`: The URL to the Docker registry – defaults to docker.io
+
 • `account-name`: The user or account that owns the image
+
 • `container-image-name`: The container image’s name
+
 • `version`: The image version
