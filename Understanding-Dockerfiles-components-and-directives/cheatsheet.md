@@ -148,3 +148,14 @@ Let’s combine all these aspects and see what we get in the Dockerfile:
     HEALTHCHECK --interval=60s --timeout=10s --start-period=20s --retries=3 CMD curl -f
     localhost
 ```
+
+While EXPOSE and STOPSIGNAL are self-explanatory, let’s look at the HEALTHCHECK directive. The HEALTHCHECK directive runs a command (hence CMD) called curl -f localhost. So,this container will report itself as healthy until the result of the curl command is a success.
+
+The HEALTHCHECK directive also contains the following optional fields:
+• --interval (default: 30s): The interval between two subsequent health checks.
+• --timeout (default: 30s): The health check probe timeout. If the health check times
+out, it implies a health check failure.
+• --start-period (default: 0s): The time lag between starting the container and
+the first health check. This allows you to ensure your container is up before a health check.
+• --retries (default: 3): The number of times the probe will retry before declaring
+an unhealthy status.
