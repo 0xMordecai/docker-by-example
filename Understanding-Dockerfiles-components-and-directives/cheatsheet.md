@@ -133,3 +133,18 @@ Now, while Docker monitors the container process and keeps it running unless it 
 `STOPSIGNAL` **helps your container shut down cleanly**.
 
 `HEALTHCHECK` **helps Docker detect if your app is truly healthy, not just “running.”**
+
+Let’s combine all these aspects and see what we get in the Dockerfile:
+
+```Dockerfile
+    FROM ubuntu:25.04
+    RUN apt update && apt install -y curl
+    RUN apt update && apt install -y nginx
+    WORKDIR /var/www/html/
+    ADD index.html ./
+    EXPOSE 80
+    CMD ["nginx", "-g", "daemon off;"]
+    STOPSIGNAL SIGTERM
+    HEALTHCHECK --interval=60s --timeout=10s --start-period=20s --retries=3 CMD curl -f
+    localhost
+```
