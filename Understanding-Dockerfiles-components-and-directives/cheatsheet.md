@@ -128,6 +128,7 @@ Always use the **EXPOSE** directive to give more clarity and meaning to your ima
 
 We also need to define the action to the container process if someone sends a `docker stop` command. While most processes take the hint and kill the process, it makes sense to explicitly specify what **STOPSIGNAL** the container should send on a `docker stop` command. We will use the **STOPSIGNAL** directive for that.
 
+Now, while Docker monitors the container process and keeps it running unless it receives a **SIGTERM** or a **stop**, **what would happen if your container process hangs for some reason? While your application is in a hung state, Docker still thinks it is running as your process is still running**. Therefore, monitoring the application through an explicit health check would make sense. We will use the `HEALTHCHECK` directive for this.
 
 `STOPSIGNAL` **helps your container shut down cleanly**.
 
