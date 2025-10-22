@@ -149,7 +149,7 @@ Let’s combine all these aspects and see what we get in the Dockerfile:
     localhost
 ```
 
-While EXPOSE and STOPSIGNAL are self-explanatory, let’s look at the HEALTHCHECK directive. The HEALTHCHECK directive runs a command (hence CMD) called curl -f localhost. So,this container will report itself as healthy until the result of the curl command is a success.
+While **EXPOSE** and **STOPSIGNAL** are self-explanatory, let’s look at the **HEALTHCHECK** directive. **The `HEALTHCHECK` directive runs a command (hence CMD) called curl -f localhost**. So,this container will report itself as healthy until the result of the curl command is a success.
 
 The HEALTHCHECK directive also contains the following optional fields:
 
