@@ -26,3 +26,9 @@ let's first build the dockerfile :
         => => naming to docker.io/<your_dockerhub_user>/nginx-hello-world
 ```
 You might have noticed that the name of the container had a prefix in front of it. That is your Docker Hub account name. The name of the image has a structure of `<registry-url>/<account-name>/<container-image-name>:<version>`.
+
+Here, we have the following:
+• `registry-url`: The URL to the Docker registry – defaults to docker.io
+• `account-name`: The user or account that owns the image
+• `container-image-name`: The container image’s name
+• `version`: The image version
