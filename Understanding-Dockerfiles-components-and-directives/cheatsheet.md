@@ -72,3 +72,5 @@ What if we wanted to customize the image according to our requirements? Practica
     Hello World! This is my first docker image!
 ```
 This one outputs a custom message instead of the default **NGINX HTML** page.
+
+We all know that the default **NGINX** directory containing the **index.html** file is **/var/www/html**. If we can copy the **index.html** file into this directory, it should sort out our problem.
