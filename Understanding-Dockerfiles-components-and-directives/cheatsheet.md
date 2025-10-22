@@ -127,3 +127,8 @@ Always use the **EXPOSE** directive to give more clarity and meaning to your ima
 **------------------------------------------------------------------------------------------------------------------------**
 
 We also need to define the action to the container process if someone sends a `docker stop` command. While most processes take the hint and kill the process, it makes sense to explicitly specify what **STOPSIGNAL** the container should send on a `docker stop` command. We will use the **STOPSIGNAL** directive for that.
+
+
+`STOPSIGNAL` **helps your container shut down cleanly**.
+
+`HEALTHCHECK` **helps Docker detect if your app is truly healthy, not just “running.”**
