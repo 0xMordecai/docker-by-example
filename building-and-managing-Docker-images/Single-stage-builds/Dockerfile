@@ -1,7 +1,6 @@
-FROM golang:1.20.5
-WORKDIR /tmp
-COPY go.mod .    
+FROM golang:1.23
+WORKDIR /app
 COPY app.go .
 ENV CGO_ENABLED=0
-RUN GOOS=linux go build -a -installsuffix cgo -o app . && chmod +x ./app
+RUN GOOS=linux go build -o app . && chmod +x ./app
 CMD ["./app"]
