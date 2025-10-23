@@ -9,3 +9,6 @@ some best practices to write Dockerfiles and create Docker images:
 • **Only add the required files within your container**. Your container does not need the heavyweight package managers and the Go toolkit while running your containers if you have already compiled the code into a binary.
 
 **Docker images are traditionally built using a sequence of steps specified in the Dockerfile**. But as we already know, **Docker is DevOps-compliant and uses config management practices from the beginning**.
+**Most people build their code within the Dockerfile**.Therefore, **we will also need the programming language library in the build context**.
+
+
