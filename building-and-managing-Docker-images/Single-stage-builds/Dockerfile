@@ -3,7 +3,11 @@ WORKDIR /app
 COPY go.mod .
 COPY app.go .
 RUN go mod tidy
+
+
+# Build the Go app
 ENV CGO_ENABLED=0
 RUN go build -o app .
+
 # Run it
 CMD ["./app"]
