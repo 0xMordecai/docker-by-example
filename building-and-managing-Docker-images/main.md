@@ -11,4 +11,4 @@ some best practices to write Dockerfiles and create Docker images:
 **Docker images are traditionally built using a sequence of steps specified in the Dockerfile**. But as we already know, **Docker is DevOps-compliant and uses config management practices from the beginning**.
 **Most people build their code within the Dockerfile**.Therefore, **we will also need the programming language library in the build context**.
 
-
+With a simple sequential Dockerfile, **these programming language tools and libraries end up within the container image**. These are known as `single-stage builds`.
