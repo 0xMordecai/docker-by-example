@@ -1,5 +1,7 @@
 FROM golang:1.22.2
 WORKDIR /app
+
+# Copy files
 COPY go.mod .
 COPY app.go .
 
