@@ -7,3 +7,5 @@ some best practices to write Dockerfiles and create Docker images:
 • **Combine multiple commands to create as few layers as possible**. Avoid multiple consecutive RUN directives. Instead, combine them into a single RUN directive using the && clauses. This will help reduce the overall container footprint.
 
 • **Only add the required files within your container**. Your container does not need the heavyweight package managers and the Go toolkit while running your containers if you have already compiled the code into a binary.
+
+**Docker images are traditionally built using a sequence of steps specified in the Dockerfile**. But as we already know, **Docker is DevOps-compliant and uses config management practices from the beginning**.
