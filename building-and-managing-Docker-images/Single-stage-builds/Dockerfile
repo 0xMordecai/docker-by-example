@@ -5,4 +5,5 @@ COPY app.go .
 RUN go mod tidy
 ENV CGO_ENABLED=0
 RUN go build -o app .
+# Run it
 CMD ["./app"]
