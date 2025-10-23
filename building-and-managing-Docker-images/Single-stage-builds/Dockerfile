@@ -2,8 +2,9 @@ FROM golang:1.22.2
 WORKDIR /app
 COPY go.mod .
 COPY app.go .
-RUN go mod tidy
 
+# Download dependencies
+RUN go mod tidy
 
 # Build the Go app
 ENV CGO_ENABLED=0
