@@ -56,3 +56,5 @@ We get the expected response back. Now, let’s run the following command to lis
 ```
 
 This image is huge! It takes 803 MB to print Hello, World! on the screen. This is not the most efficient way of building Docker images.
+
+Before we look at the solution, let’s understand why the image is so bloated in the first place. We use the Golang base image, which contains the entire Go toolkit and generates a simple binary. We do not need the complete Go toolkit for this application to run; it can efficiently run in an Alpine Linux image.
