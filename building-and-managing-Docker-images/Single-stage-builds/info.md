@@ -47,3 +47,10 @@ Now, let’s run the Docker image and see what we get:
     docker run <your_dockerhub_user>/go-hello-world:single_stage
     Hello, World!
 ```
+We get the expected response back. Now, let’s run the following command to list the image:
+```shell
+    docker images
+    REPOSITORY              TAG           IMAGE ID      CREATED        SIZE
+    <your_dockerhub_user>
+    /go-hello-world         single_stage  3fd3d26111a1  3 minutes ago  803MB
+```
