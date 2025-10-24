@@ -41,3 +41,9 @@ Let’s build the Dockerfile:
 ```shell
     docker build -t <your_dockerhub_user>/go-hello-world:single_stage .
 ```
+
+Now, let’s run the Docker image and see what we get:
+```Shell
+    docker run <your_dockerhub_user>/go-hello-world:single_stage
+    Hello, World!
+```
