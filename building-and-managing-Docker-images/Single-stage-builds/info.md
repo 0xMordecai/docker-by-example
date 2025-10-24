@@ -35,3 +35,9 @@ The Dockerfile appears as follows:
 ```
 
 This is standard stuff. We take the golang:1.22.2 base image, declare a WORKDIR /tmp, copy app.go from the host filesystem to the container, and build the Go application to generate a binary. Finally, we use the CMD directive with the generated binary to be executed when we run the container.
+
+Let’s build the Dockerfile:
+
+```shell
+    docker build -t <your_dockerhub_user>/go-hello-world:single_stage .
+```
