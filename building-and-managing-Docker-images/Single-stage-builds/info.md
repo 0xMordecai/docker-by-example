@@ -54,3 +54,5 @@ We get the expected response back. Now, let’s run the following command to lis
     <your_dockerhub_user>
     /go-hello-world         single_stage  3fd3d26111a1  3 minutes ago  803MB
 ```
+
+This image is huge! It takes 803 MB to print Hello, World! on the screen. This is not the most efficient way of building Docker images.
