@@ -11,3 +11,13 @@ Let’s look at the Go application file, app.go, first:
         fmt.Println("Hello, World!")
     }
 ```
+
+The Dockerfile appears as follows:
+
+```Dockerfile
+    FROM golang:1.20.5
+    WORKDIR /tmp
+    COPY app.go .
+    RUN GOOS=linux go build -a -installsuffix cgo -o app . && chmod +x ./app
+    CMD ["./app"]
+```
