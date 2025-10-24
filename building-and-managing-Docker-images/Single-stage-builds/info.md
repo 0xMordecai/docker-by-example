@@ -57,6 +57,6 @@ We get the expected response back. Now, let’s run the following command to lis
 
 This image is huge! It takes 803 MB to print Hello, World! on the screen. This is not the most efficient way of building Docker images.
 
-Before we look at the solution, let’s understand why the image is so bloated in the first place. We use the Golang base image, which contains the entire Go toolkit and generates a simple binary. We do not need the complete Go toolkit for this application to run; it can efficiently run in an Alpine Linux image.
+Before we look at the solution, let’s understand **why the image is so bloated in the first place**. We used the `Golang base image`, which **contains the entire Go toolkit and generates a simple binary**. We do not need the complete Go toolkit for this application to run; **it can efficiently run in an Alpine Linux image**.
 
-Docker solves this problem by providing multi-stage builds. You can split your build into stages where you can build your code in one stage and then, in the second stage, export the built code to another context that begins with a different base image that is much lighter and only contains those files and components that we need to run the code.
+Docker solves this problem by **providing `multi-stage builds`**. You can split your build into stages where you can build your code in one stage and then, in the second stage, export the built code to another context that begins with a different base image that is much lighter and only contains those files and components that we need to run the code.
