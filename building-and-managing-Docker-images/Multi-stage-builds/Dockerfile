@@ -12,7 +12,7 @@ RUN go mod tidy
 RUN GO111MODULE=off GOOS=linux go build -a -installsuffix cgo -o app . && chmod +x ./app
 
 
-FROM alpain:3.18.0
+FROM alpain:latest
 WORKDIR /tmp
 COPY --from=build /tmp/app .
 CMD ["./app"]
