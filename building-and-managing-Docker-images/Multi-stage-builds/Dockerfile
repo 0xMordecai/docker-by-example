@@ -9,8 +9,5 @@ COPY app.go .
 RUN go mod tidy
 
 # Build the Go app
-ENV CGO_ENABLED=0
-RUN go build -o app .
+RUN GO111MODULE=off GOOS=linux go build -a -installsuffix cgo -o app . && chmod +x ./app
 
-# Run it
-CMD ["./app"]
