@@ -41,3 +41,12 @@ Now, let’s run the container:
     docker run <your_dockerhub_user>/go-hello-world:multi_stage .
     Hello, World!
 ```
+
+We get the same output, but this time with a minimal footprint. Let’s look at the image to confirm this:
+
+```shell
+docker images
+REPOSITORY              TAG          IMAGE ID      CREATED        SIZE
+<your_dockerhub_user>
+/go-hello-world         multi_stage  e4b793b39a8e  5 minutes ago  9.17MB
+```
