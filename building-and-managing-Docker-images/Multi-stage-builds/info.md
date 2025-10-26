@@ -28,3 +28,8 @@ The `Dockerfile` contains two **FROM** directives: `FROM golang:1.22.2 AS build`
 #   second stage
 
 **In the second stage, we use the Alpine base image and copy the `/app` file from the build stage into our current stage. This is the only file we need to run in the container. The rest were only required to build and bloat our container during runtime.**
+
+Let’s build the image and see what we get:
+```shell
+    docker build -t <your_dockerhub_user>/go-hello-world:multi_stage
+```
