@@ -51,7 +51,6 @@ REPOSITORY              TAG        �
 /go-hello-world         multi_stage  e4b793b39a8e  5 minutes ago  9.17MB
 ```
 
-This one occupies just 9.17 MB instead of the huge 803 MB. This is a massive improvement! We have
+This one **occupies just 9.17 MB instead of the huge 803 MB**. This is a massive improvement! We have
 
-reduced the image size by almost 100 times.
-That is how we increase efficiency within our container image. Building efficient images is the key to running production-ready containers, and most professional images you find on Docker Hub use multi-stage builds to create efficient images.
+**reduced the image size by almost 100 times. That is how we increase efficiency within our container image. Building efficient images is the key to running production-ready containers, and most professional images you find on Docker Hub use multi-stage builds to create efficient images.**
