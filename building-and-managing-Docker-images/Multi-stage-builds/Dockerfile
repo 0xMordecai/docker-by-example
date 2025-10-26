@@ -1,5 +1,5 @@
 FROM golang:1.22.2 AS build
-WORKDIR /tmp
+WORKDIR /app
 
 # Copy files
 COPY go.mod .
@@ -13,6 +13,6 @@ RUN GO111MODULE=off GOOS=linux go build -a -installsuffix cgo -o app . && chmod 
 
 
 FROM alpine:3.18.0
-WORKDIR /tmp
-COPY --from=build /tmp/app .
+WORKDIR /app
+COPY --from=build /app .
 CMD ["./app"]
