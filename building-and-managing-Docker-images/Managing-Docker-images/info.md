@@ -60,6 +60,7 @@ Now, you can push the image to Docker Hub using the following command:
 This has pushed three layers and mounted the rest from alpine. We used alpine as the base image, which is already available on Docker Hub.
 
 If you have multiple tags for the image and you want to push all of them, then you can use the -a or --all-tags option in the push command. This will push all the tags for that particular image:
+
 ```shell
     docker push -a <your_dockerhub_user>/go-hello-world
 ```
