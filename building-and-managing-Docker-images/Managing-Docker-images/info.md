@@ -52,4 +52,8 @@ We built our container many times, but what should we do if we need to push it t
 Now, you can push the image to Docker Hub using the following command:
 ```shell
     docker push <your_dockerhub_user>/go-hello-world:multi_stage
+    The push refers to repository [docker.io/<your_dockerhub_user>/go-hello-world]
+d10e0340acf3: Pushed 
+0c517899a3b6: Pushed 
+bb01bd7e32b5: Mounted from library/alpine 
 ```
