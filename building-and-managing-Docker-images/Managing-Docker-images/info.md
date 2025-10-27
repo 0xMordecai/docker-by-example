@@ -25,3 +25,10 @@ So, using the latest tag on an image is a bad idea, and the best practice is to 
 • Docker tags allow you to roll out or roll back your container deployment quickly. If you always use the latest tag, the new build overrides the old one, so there is no way you can roll back a faulty container to the last known good version. Using versioned images in production is also a good idea to ensure your container’s stability. If, for some reason, you lose the local image and decide to rerun your container, you may not get the same version of the software you were already running, as the latest tag changes frequently. So, it’s best to use a particular container version in production for stability.
 
 Images comprise multiple layers, and most of the time, there is a relationship between various versions of containers that run on your server. With time, new versions of images roll out in your production environment, so removing the old images by doing some housekeeping is best. This will reclaim some valuable space the container images occupy, resulting in a cleaner filesystem.
+
+To remove a particular image, you can use the docker rmi command:
+
+```shell
+    $ docker rmi nginx
+    Error response from daemon: conflict: unable to remove repository reference "nginx" (mustforce) - container d5c84356116f is using its referenced image f9c14fe76d50
+```
