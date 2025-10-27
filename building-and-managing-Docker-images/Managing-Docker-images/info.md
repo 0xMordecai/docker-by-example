@@ -5,3 +5,9 @@ In modern DevOps practices, Docker images are primarily built either on a develo
 To efficiently use images, we must understand how to tag them.
 
 Primarily, Docker pulls the image once when you do a Docker run. This means that once an image with a particular version is on the machine, Docker will not attempt to pull it on every run unless you explicitly pull it.
+
+To pull the image explicitly, you can use the docker pull command:
+
+```shell
+    docker pull nginx
+```
