@@ -20,7 +20,8 @@ Now, **if we attempt to launch a container using this image, it will instantly l
 
 So, **using the latest tag on an image is a bad idea, and the best practice is to use `semantic versions as your tag`**. There are two primary reasons for this:
 
-• If you build the latest image every time, orchestrators such as Docker Compose and Kubernetes will assume the image is already on your machine and will not pull your image by default. Using an image pull policy such as Always on Kubernetes or a script to pull the image is a waste of network bandwidth. It is also important to note that Docker Hub limits the number of pulls you can make on open source images, so you must limit your pulls to only when necessary.
+**• If you rebuild your image every time, Docker Compose and Kubernetes won’t pull it again by default. Forcing pulls (e.g., `using the Always policy or a script`) wastes bandwidth and can hit Docker Hub’s pull limits — so only pull images when necessary.**
+
 
 • Docker tags allow you to roll out or roll back your container deployment quickly. If you always use the latest tag, the new build overrides the old one, so there is no way you can roll back a faulty container to the last known good version. Using versioned images in production is also a good idea to ensure your container’s stability. If, for some reason, you lose the local image and decide to rerun your container, you may not get the same version of the software you were already running, as the latest tag changes frequently. So, it’s best to use a particular container version in production for stability.
 
