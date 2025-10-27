@@ -36,3 +36,9 @@ Oh! We get an error, but why? It’s because we have a container running and usi
 
 # TIP
 **You cannot remove images currently used by a running container.**
+
+First, you will have to stop and remove the container. Then, you can remove the image using the preceding command. If you want to do everything at once, you can force removal by using the -f flag, which will stop the container, remove it, and then remove the image. So, unless you know what you are doing, do not use the -f flag:
+
+```shell
+    docker rmi -f nginx
+```
