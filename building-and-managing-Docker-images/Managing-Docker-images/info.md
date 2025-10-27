@@ -45,7 +45,7 @@ Oh! We get an error, but why? It’s because we have a container running and usi
     docker rmi -f nginx
 ```
 
-We built our container many times, but what should we do if we need to push it to Docker Hub or other registries? But before we do that, we will have to authenticate it with Docker Hub using the following command:
+We built our container many times, but what should we do if we need to push it to **Docker Hub** or other registries? But before we do that, we will have to authenticate it with Docker Hub using the following command:
 
 ```shell
     docker login
@@ -67,7 +67,7 @@ If you have multiple tags for the image and you want to push all of them, then y
     docker push -a <your_dockerhub_user>/go-hello-world
 ```
 
-When your build fails for some reason and you make changes to your Dockerfile, it’s possible that the old images’ layers will remain dangling. Therefore, it is best practice to prune the dangling images at regular intervals. You can use docker images prune for this:
+**When your build fails for some reason and you make changes to your Dockerfile, it’s possible that the old images’ layers will remain dangling. Therefore, it is best practice to prune the dangling images at regular intervals. You can use docker images prune for this**:
 
 ```shell
     docker images prune
