@@ -23,9 +23,10 @@ So, **using the latest tag on an image is a bad idea, and the best practice is t
 **• If you rebuild your image every time, Docker Compose and Kubernetes won’t pull it again by default. Forcing pulls (e.g., `using the Always policy or a script`) wastes bandwidth and can hit Docker Hub’s pull limits — so only pull images when necessary.**
 
 
-• Docker tags allow you to roll out or roll back your container deployment quickly. If you always use the latest tag, the new build overrides the old one, so there is no way you can roll back a faulty container to the last known good version. Using versioned images in production is also a good idea to ensure your container’s stability. If, for some reason, you lose the local image and decide to rerun your container, you may not get the same version of the software you were already running, as the latest tag changes frequently. So, it’s best to use a particular container version in production for stability.
+**• Docker tags make it easy to roll out or roll back container versions. Relying on the **latest** tag is risky since it’s constantly updated, preventing rollbacks and causing version mismatches. For production, always use `versioned images` to maintain stability and consistency.**
 
-Images comprise multiple layers, and most of the time, there is a relationship between various versions of containers that run on your server. With time, new versions of images roll out in your production environment, so removing the old images by doing some housekeeping is best. This will reclaim some valuable space the container images occupy, resulting in a cleaner filesystem.
+
+**Docker images are made of multiple layers, and old versions can accumulate over time. Regularly cleaning up unused images helps free disk space and keeps your system tidy.**
 
 To remove a particular image, you can use the docker rmi command:
 
