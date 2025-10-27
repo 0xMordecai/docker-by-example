@@ -26,7 +26,7 @@ So, **using the latest tag on an image is a bad idea, and the best practice is t
 **• Docker tags make it easy to roll out or roll back container versions. Relying on the **latest** tag is risky since it’s constantly updated, preventing rollbacks and causing version mismatches. For production, always use `versioned images` to maintain stability and consistency.**
 
 
-**Docker images are made of multiple layers, and old versions can accumulate over time. Regularly cleaning up unused images helps free disk space and keeps your system tidy.**
+**Images comprise multiple layers, and most of the time, there is a relationship between various versions of containers that run on your server. With time, new versions of images roll out in your production environment, so removing the old images by doing some housekeeping is best. This will reclaim some valuable space the container images occupy, resulting in a cleaner filesystem.**
 
 **To remove a particular image, you can use the `docker rmi` command:**
 
