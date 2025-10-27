@@ -57,6 +57,9 @@ Now, you can push the image to Docker Hub using the following command:
     0c517899a3b6: Pushed 
     bb01bd7e32b5: Mounted from library/alpine 
 ```
-This has pushed four layers and mounted the rest from Ubuntu. We used Ubuntu as the base image, which is already available on Docker Hub.
+This has pushed three layers and mounted the rest from alpine. We used alpine as the base image, which is already available on Docker Hub.
 
-f you have multiple tags for the image and you want to push all of them, then you can use the -a or --all-tags option in the push command. This will push all the tags for that particular image:
+If you have multiple tags for the image and you want to push all of them, then you can use the -a or --all-tags option in the push command. This will push all the tags for that particular image:
+```shell
+    docker push -a <your_dockerhub_user>/go-hello-world
+```
