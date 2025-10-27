@@ -11,3 +11,5 @@ To pull the image explicitly, you can use the docker pull command:
 ```shell
     docker pull nginx
 ```
+
+Now, if we attempt to launch a container using this image, it will instantly launch the container without pulling the image:
