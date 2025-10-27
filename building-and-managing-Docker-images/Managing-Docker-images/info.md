@@ -42,3 +42,9 @@ First, you will have to stop and remove the container. Then, you can remove the 
 ```shell
     docker rmi -f nginx
 ```
+
+We built our container many times, but what should we do if we need to push it to Docker Hub or other registries? But before we do that, we will have to authenticate it with Docker Hub using the following command:
+
+```shell
+    docker login
+```
