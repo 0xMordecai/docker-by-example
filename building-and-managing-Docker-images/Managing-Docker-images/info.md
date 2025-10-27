@@ -32,3 +32,4 @@ To remove a particular image, you can use the docker rmi command:
     $ docker rmi nginx
     Error response from daemon: conflict: unable to remove repository reference "nginx" (mustforce) - container d5c84356116f is using its referenced image f9c14fe76d50
 ```
+Oh! We get an error, but why? It’s because we have a container running and using this image.
