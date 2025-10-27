@@ -64,3 +64,10 @@ If you have multiple tags for the image and you want to push all of them, then y
 ```shell
     docker push -a <your_dockerhub_user>/go-hello-world
 ```
+
+When your build fails for some reason and you make changes to your Dockerfile, it’s possible that the old images’ layers will remain dangling. Therefore, it is best practice to prune the dangling images at regular intervals. You can use docker images prune for this:
+
+```shell
+    docker images prune
+```
+
