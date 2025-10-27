@@ -72,4 +72,3 @@ If you have multiple tags for the image and you want to push all of them, then y
 ```shell
     docker images prune
 ```
-
