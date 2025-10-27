@@ -48,3 +48,8 @@ We built our container many times, but what should we do if we need to push it t
 ```shell
     docker login
 ```
+
+Now, you can push the image to Docker Hub using the following command:
+```shell
+    docker push <your_dockerhub_user>/go-hello-world:multi_stage
+```
