@@ -28,7 +28,7 @@ So, **using the latest tag on an image is a bad idea, and the best practice is t
 
 **Docker images are made of multiple layers, and old versions can accumulate over time. Regularly cleaning up unused images helps free disk space and keeps your system tidy.**
 
-To remove a particular image, you can use the docker rmi command:
+**To remove a particular image, you can use the `docker rmi` command:**
 
 ```shell
     $ docker rmi nginx
