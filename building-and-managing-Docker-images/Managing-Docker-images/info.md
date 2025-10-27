@@ -18,7 +18,7 @@ Now, **if we attempt to launch a container using this image, it will instantly l
     docker run nginx
 ```
 
-So, using the latest tag on an image is a bad idea, and the best practice is to use semantic versions as your tag. There are two primary reasons for this:
+So, **using the latest tag on an image is a bad idea, and the best practice is to use `semantic versions as your tag`**. There are two primary reasons for this:
 
 • If you build the latest image every time, orchestrators such as Docker Compose and Kubernetes will assume the image is already on your machine and will not pull your image by default. Using an image pull policy such as Always on Kubernetes or a script to pull the image is a waste of network bandwidth. It is also important to note that Docker Hub limits the number of pulls you can make on open source images, so you must limit your pulls to only when necessary.
 
