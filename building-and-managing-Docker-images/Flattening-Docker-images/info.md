@@ -78,3 +78,8 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
 ```
 
 **Here, we can see that the flat image is present and that it occupies less space than the latest image. If we view its history, we should see just a single layer:**
+```shell
+    $ docker history <your_dockerhub_user>/nginx-hello-world:flat
+    IMAGE         CREATED             CREATED BY  SIZE   COMMENT
+    57bf5a9ada46  About a minute ago              177MB  Imported from -
+```
