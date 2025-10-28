@@ -88,12 +88,12 @@ It has flattened the image. But is it a best practice to flatten Docker images? 
 
 **• Are several applications using a similar base image? If that is the case, then flattening images will only increase the disk footprint, as you won’t be able to take advantage of a layered filesystem.**
 
-**• Consider alternatives to flattening images using a small base image, such as Alpine.**
+**•     Consider alternatives to flattening images using a small base image, such as Alpine.**
 
-**• Multi-stage builds are helpful for most complied languages and can reduce your image’s size considerably.**
+**•     Multi-stage builds are helpful for most complied languages and can reduce your image’s size considerably.**
 
-**• You can also slim down images by using as few layers as possible by combining multiple steps into a single RUN directive.**
+**•     You can also slim down images by using as few layers as possible by combining multiple steps into a single RUN directive.**
 
-**• Consider whether the benefits of flattening the image outweigh the disadvantages, whether you'll get considerable performance improvements, and whether performance is critical for your application needs.**
+**•     Consider whether the benefits of flattening the image outweigh the disadvantages, whether you'll get considerable performance improvements, and whether performance is critical for your application needs.**
 
 These considerations will help you understand your container image footprint and help you manage container images. **Remember that although reducing the image’s size is ideal, flattening it should be a last resort**.
