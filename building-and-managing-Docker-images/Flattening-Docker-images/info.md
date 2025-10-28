@@ -50,3 +50,7 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
 ```
 
 **Now, let’s run a Docker image with the latest image:**
+```shell
+    $ docker run -d --name nginx <your_dockerhub_user>/nginx-hello-world:latest
+    e2d0c4b884556a353817aada13f0c91ecfeb01f5940e91746f168b…
+```
