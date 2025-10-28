@@ -95,3 +95,5 @@ It has flattened the image. But is it a best practice to flatten Docker images? 
 • You can also slim down images by using as few layers as possible by combining multiple steps into a single RUN directive.
 
 • Consider whether the benefits of flattening the image outweigh the disadvantages, whether you'll get considerable performance improvements, and whether performance is critical for your application needs.
+
+These considerations will help you understand your container image footprint and help you manage container images. Remember that although reducing the image’s size is ideal, flattening it should be a last resort.
