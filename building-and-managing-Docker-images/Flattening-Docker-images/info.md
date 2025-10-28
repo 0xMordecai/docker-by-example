@@ -65,3 +65,14 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
     $ cat nginx-hello-world-flat.tar | \
     docker import - <your_dockerhub_user>/nginx-hello-world:flat
 ```
+
+**Now, let’s list the images and see what we get:**
+
+```shell
+    $ docker images
+    REPOSITORY              TAG     IMAGE ID      CREATED     SIZE
+    <your_dockerhub_user>/  flat    57bf5a9ada46  34 seconds  177MB
+    nginx-hello-world                             ago
+    <your_dockerhub_user>/  latest  bba3123dde01  2 hours
+    nginx-hello-world                             ago         180MB
+```
