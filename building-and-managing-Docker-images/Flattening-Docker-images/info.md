@@ -9,3 +9,5 @@ Docker inherently uses a layered filesystem, and we have already discussed why i
 **2.Do a `docker export` of the running container to a `.tar` file.**
 
 **3.Do a `docker import` of the `.tar` file into another image.**
+
+Let’s use the **go-hello-world** image to flatten it and export it to another image; that is, **`<your_dockerhub_user>/go-hello-world:flat`**.
