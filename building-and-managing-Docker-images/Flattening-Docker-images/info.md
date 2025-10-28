@@ -14,12 +14,39 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
 
 **Before we move on, let’s get the history of the latest image:**
 ```shell
-    docker history <your_dockerhub_user>/go-hello-world:multi_stage
-    
-    IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
-    c3797fda2927   3 days ago    CMD ["./app"]                                   0B        buildkit.dockerfile.v0
-    <missing>      3 days ago    COPY /app . # buildkit                          1.89MB    buildkit.dockerfile.v0
-    <missing>      3 days ago    WORKDIR /app                                    0B        buildkit.dockerfile.v0
-    <missing>      2 years ago   /bin/sh -c #(nop)  CMD ["/bin/sh"]              0B        
-    <missing>      2 years ago   /bin/sh -c #(nop) ADD file:7625ddfd589fb824e…   7.33MB  
+    $ docker history <your_dockerhub_user>/nginx-hello-world:latest
+    IMAGE          CREATED      CREATED BY                SIZE            COMMENT
+    bba3123dde01   2 hours ago  HEALTHCHECK &
+                                {["CMD-SHELL"
+                                "curl -f localhos…        0B              buildkit.dockerfile.v0
+    <missing>      2 hours ago  STOPSIGNAL                0B
+                                SIGTERM                   0B              buildkit.dockerfile.v0
+    <missing>      2 hours ago  CMD ["nginx"
+                                "-g" "daemon off;"]       0B              buildkit.dockerfile.v0
+    <missing>      2 hours ago  EXPOSE map[80/
+                                tcp:{}]                   0B              buildkit.dockerfile.v0
+    <missing>      2 hours ago  ADD index.html ./ #
+                                buildkit                  44B             buildkit.dockerfile.v0
+    <missing>      2 hours ago  WORKDIR /var/www/
+                                html/                     0B              buildkit.dockerfile.v0
+    <missing>      2 hours ago  RUN /bin/sh -c apt
+                                update && apt             57.2MB          buildkit.dockerfile.v0
+                                install -y…
+    <missing>      2 hours ago  RUN /bin/sh -c apt
+                                update && apt             59.8MB          buildkit.dockerfile.v0
+                                install -y…
+    <missing>      10 days ago  /bin/sh -c #(nop)         0B
+                                CMD ["/bin/bash"]
+    <missing>      10 days ago  /bin/sh -c #(nop) ADD     63.2MB
+                                file:3c74e7e08cbf9a876…
+    <missing>      10 days ago  /bin/sh -c #(nop)  LABEL  0B
+                                org.opencontainers.…
+    <missing>      10 days ago  /bin/sh -c #(nop)  LABEL  0B
+                                org.opencontainers.…
+    <missing>      10 days ago  /bin/sh -c #(nop)  ARG    0B
+                                LAUNCHPAD_BUILD_ARCH
+    <missing>      10 days ago  /bin/sh -c #(nop)         0B
+                                ARG RELEASE        
 ```
+
+**Now, let’s run a Docker image with the latest image:**
