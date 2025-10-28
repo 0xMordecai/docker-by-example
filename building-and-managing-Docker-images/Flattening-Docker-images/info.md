@@ -14,7 +14,8 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
 
 **Before we move on, let’s get the history of the latest image:**
 ```shell
-    docker history kings5layer/go-hello-world:multi_stage
+    docker history <your_dockerhub_user>/go-hello-world:multi_stage
+    
     IMAGE          CREATED       CREATED BY                                      SIZE      COMMENT
     c3797fda2927   3 days ago    CMD ["./app"]                                   0B        buildkit.dockerfile.v0
     <missing>      3 days ago    COPY /app . # buildkit                          1.89MB    buildkit.dockerfile.v0
