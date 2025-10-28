@@ -52,7 +52,6 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
 **Now, let’s run a Docker image with the latest image:**
 ```shell
     $ docker run -d --name nginx <your_dockerhub_user>/nginx-hello-world:latest
-    e2d0c4b884556a353817aada13f0c91ecfeb01f5940e91746f168b…
 ```
 
 **Next, let’s take an export out of the running container:**
@@ -61,3 +60,8 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
 ```
 
 **Import `nginx-hello-world-flat.tar` to a new image; that is, `<your_dockerhub_user>/nginx-hello-world:flat`:**
+
+```shell
+    $ cat nginx-hello-world-flat.tar | \
+    docker import - <your_dockerhub_user>/nginx-hello-world:flat
+```
