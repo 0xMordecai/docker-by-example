@@ -76,3 +76,5 @@ Let’s use the **go-hello-world** image to flatten it and export it to another 
     <your_dockerhub_user>/  latest  bba3123dde01  2 hours
     nginx-hello-world                             ago         180MB
 ```
+
+**Here, we can see that the flat image is present and that it occupies less space than the latest image. If we view its history, we should see just a single layer:**
