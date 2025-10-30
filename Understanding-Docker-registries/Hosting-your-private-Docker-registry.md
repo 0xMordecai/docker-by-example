@@ -46,3 +46,4 @@ First, let’s create the local directories that we will mount to the containers
 ```shell
     docker run --entrypoint htpasswd registry:2.7.0 -Bbn user pass > /mnt/registry/auth/htpasswd
 ```
+**This command runs a temporary container to generate an `htpasswd` authentication file for your private Docker registry, creating a `bcrypt-encrypted` `username/password` entry and saving it to `/mnt/registry/auth/htpasswd`**
