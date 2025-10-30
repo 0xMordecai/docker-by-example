@@ -78,3 +78,11 @@ First, let’s create the local directories that we will mount to the containers
 ```
 
 **The container is now up and running. Let’s use `https` this time, but before that, let’s `docker login` to the registry. Add the username and password you set while creating the `htpasswd` file (in this case, user and pass):**
+
+```shell
+    docker login https://localhost
+    Username: user
+    Password: 
+    Login Succeeded
+
+```
