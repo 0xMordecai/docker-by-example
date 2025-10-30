@@ -1,0 +1,1 @@
+# Hosting your private Docker registry
