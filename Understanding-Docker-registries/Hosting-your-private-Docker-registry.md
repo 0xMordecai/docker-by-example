@@ -60,3 +60,17 @@ First, let’s create the local directories that we will mount to the containers
 ```
 
 **Now, we are ready to launch our container with the required configuration:**
+```shell
+    docker run -d -p 443:443 --restart=always \
+    --name registry \
+    -v /mnt/registry/certs:/certs \
+    -v /mnt/registry/auth:/auth \
+    -v /mnt/registry/registry:/var/lib/registry \
+    -e REGISTRY_HTTP_ADDR=0.0.0.0:443 \
+    -e REGISTRY_HTTP_TLS_CERTIFICATE=/certs/domain.crt \
+    -e REGISTRY_HTTP_TLS_KEY=/certs/domain.key \
+    -e REGISTRY_AUTH=htpasswd \
+    -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
+    -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
+    registry:2
+```
