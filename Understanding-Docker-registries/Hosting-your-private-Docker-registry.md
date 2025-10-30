@@ -30,5 +30,7 @@
     0c517899a3b6: Pushed 
     bb01bd7e32b5: Pushed 
     multi_stage: digest: sha256:85a41870c5775f5868529231f0e0c8aac40a4cae... size: 945
-
 ```
+And that’s it! It is as simple as that!
+
+There are other considerations as well since this is too simplistic. You will also have to mount volumes; otherwise, you will lose all the images when you restart the registry container. Also, there is no authentication in place, so anyone accessing this server can push or pull images, but we don’t desire this. Also, communication is insecure, and we want to encrypt the images during transit.
