@@ -84,5 +84,4 @@ First, let’s create the local directories that we will mount to the containers
     Username: user
     Password: 
     Login Succeeded
-
 ```
