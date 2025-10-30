@@ -53,3 +53,8 @@ First, let’s create the local directories that we will mount to the containers
 ```shell
     openssl req -newkey rsa:4096 -nodes -sha256 -keyout /mnt/registry/certs/domain.key -x509 -days 365 -out /mnt/registry/certs/domain.crt
 ```
+
+Before we proceed further, let’s remove the existing registry:
+```shell
+    docker rm -f registry
+```
