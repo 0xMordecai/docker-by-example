@@ -48,4 +48,8 @@ First, let’s create the local directories that we will mount to the containers
 ```
 **This command runs a temporary container to generate an `htpasswd` authentication file for your private Docker registry, creating a `bcrypt-encrypted` `username/password` entry and saving it to `/mnt/registry/auth/htpasswd`**
 
-**The next step is to generate some self-signed certificates for enabling `TLS(Transport Layer Security)` on the repository. Add your server name or IP when asked for a `Fully Qualified Domain Name (FQDN)`. You can leave the other fields blank or add appropriate values for them**
+**The next step is to generate some self-signed certificates for enabling `TLS(Transport Layer Security)` on the repository. Add your server name or IP when asked for a `Fully Qualified Domain Name (FQDN)`. You can leave the other fields blank or add appropriate values for them.**
+
+```shell
+    openssl req -newkey rsa:4096 -nodes -sha256 -keyout /mnt/registry/certs/domain.key -x509 -days 365 -out /mnt/registry/certs/domain.crt
+```
