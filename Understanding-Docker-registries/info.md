@@ -6,7 +6,4 @@ A **`Docker registry` is a stateless, highly scalable server-side application th
 
 **By default, Docker interacts with its public Docker registry instance, called `Docker Hub`, which helps you distribute your images to the broader open source community.**
 
-Docker
-allows you to use a private Docker registry for a scenario you can host within your infrastructure
-called Docker Trusted Registry. Several online options are available, including using a SaaS service,
-such as GCR, or creating private repositories at Docker Hub.
+**Docker allows you to use a private Docker registry for a scenario you can host within your infrastructure called `Docker Trusted Registry`.** Several online options are available, including using a SaaS service, such as ***`GCR`***, or **`creating private repositories at Docker Hub`**.
