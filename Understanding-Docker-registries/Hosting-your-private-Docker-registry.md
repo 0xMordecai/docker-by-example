@@ -20,3 +20,5 @@
 ```shell
     docker tag <username>/go-hello-world:multi_stage localhost/<username>/go-hello-world:multi_stage
 ```
+
+**Now, we can go ahead and push the image to the local Docker registry:**
