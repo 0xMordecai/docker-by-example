@@ -73,4 +73,6 @@ First, let’s create the local directories that we will mount to the containers
     -e "REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm" \
     -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
     registry:2
+
+    95bd25d3c8795c2743e3f351cb6b5aaba3a21a843859c387c6...
 ```
