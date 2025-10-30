@@ -41,3 +41,5 @@ First, let’s create the local directories that we will mount to the containers
      sudo mkdir -p /mnt/registry/auth
      sudo chmod -R 777 /mnt/registry
 ```
+
+**Now, let’s generate an `htpasswd` file for adding authentication to the registry. For this, we will run the `htpasswd` command within a new Docker registry container to create a file on our local directory**
