@@ -95,3 +95,4 @@ First, let’s create the local directories that we will mount to the containers
     bb01bd7e32b5: Pushed 
     multi_stage: digest: sha256:85a41870c5775f5868529231f0e0c8aac40a4caed30e7... size: 945
 ```
+**This time, it works the way we want it to.**
