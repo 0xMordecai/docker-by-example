@@ -14,3 +14,5 @@
     Status: Downloaded newer image for registry:2
     bb1c1a0c934142ca23a6cd44585b2b9db728d2a4e2093d...
 ```
+
+**Since the registry runs on localhost:80, we need to tag our image to specify that registry before pushing it. The tag format is `<registry_url>/<user>/<image_name>:<image_version>`, and we use the `docker tag` command to assign this new name to the existing image.**
